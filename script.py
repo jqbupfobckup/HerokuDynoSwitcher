@@ -157,7 +157,7 @@ while True:
       app = heroku_conn.app(FOURTH_B_APPNAME)
       app.process_formation()[FOURTH_PROCESSTYPE].scale(0)
       print("The fourth app in the second acc has been scaled down.")
-      time.sleep(5)
+      time.sleep(5) 
       heroku_conn = heroku3.from_key(FOURTH_A_APIKEY)
       app = heroku_conn.app(FOURTH_A_APPNAME)
       app.process_formation()[FOURTH_PROCESSTYPE].scale(1)
